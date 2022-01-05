@@ -1,0 +1,90 @@
+.parent{
+    display: flex;
+    width:100%;
+    padding:2%;
+    margin:2%;
+}
+
+.parent > .card{
+    width:auto;
+    padding:1%;
+    margin:1%;
+    border: 2px solid blue;
+    text-align: center;
+    height: fit-content;
+    
+
+}
+button{
+    color:red;
+    width:50%;
+}
+
+/* img{
+    width:200px
+} */
+
+/*mobile devices 320px to 480px */
+/*tablets 481px to 768px*/
+/*laptops 769 to 1024*/
+/* larger desktops 1025 to 1200*/
+
+@media only screen and (min-width:320px) and (max-width:480px)
+ {
+     body{
+         background-color: magenta;
+     }
+    .parent{
+        display: flex;
+        flex-direction: column;
+    }
+    .parent > .card{
+        width:90%;
+    }
+    
+}
+
+@media only screen and (min-width:481px) and (max-width:768px)
+ {
+    body{
+        background-color: lavender;
+    }
+    .parent{
+        display: flex;
+        flex-direction: column;
+    }
+    .parent > .card{
+        width:90%;
+    }
+    
+}
+
+@media only screen and (min-width:769px) and (max-width:1024px)
+ {
+    body{
+        background-color: palevioletred;
+    }
+    .parent{
+        display: flex;
+        flex-direction: column;
+    }
+    .parent > .card{
+        width:90%;
+    }
+    
+}
+
+@media only screen and (min-width:1025px) and (max-width:1200px)
+ {
+    body{
+        background-color: violet;
+    }
+    .parent{
+        display: flex;
+        flex-direction: column;
+    }
+    .parent > .card{
+        width:90%;
+    }
+    
+}
